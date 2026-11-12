@@ -2,7 +2,9 @@
 
 import {
   sendCateringInquiryEmail,
+  sendCateringConfirmationToCustomer,
   sendContactInquiryEmail,
+  sendContactConfirmationToCustomer,
 } from "@/lib/mailer";
 
 export interface CateringFormState {
@@ -86,8 +88,8 @@ export async function submitCateringInquiry(
     };
   }
 
-  // Dispatch email notification to recipient
-  await sendCateringInquiryEmail({
+  // Dispatch emails: 1) Admin notification, 2) Customer confirmation receipt
+  const cateringPayload = {
     name,
     email,
     phone: phone || undefined,
@@ -96,7 +98,12 @@ export async function submitCateringInquiry(
     guests,
     location,
     notes: notes || undefined,
-  });
+  };
+
+  await Promise.allSettled([
+    sendCateringInquiryEmail(cateringPayload),
+    sendCateringConfirmationToCustomer(cateringPayload),
+  ]);
 
   return {
     success: true,
@@ -151,13 +158,18 @@ export async function submitContactMessage(
     };
   }
 
-  // Dispatch email notification to recipient
-  await sendContactInquiryEmail({
+  // Dispatch emails: 1) Admin notification, 2) Customer confirmation receipt
+  const contactPayload = {
     name,
     email,
     subject: subject || undefined,
     message,
-  });
+  };
+
+  await Promise.allSettled([
+    sendContactInquiryEmail(contactPayload),
+    sendContactConfirmationToCustomer(contactPayload),
+  ]);
 
   return {
     success: true,
