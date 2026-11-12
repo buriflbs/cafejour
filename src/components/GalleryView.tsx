@@ -147,15 +147,16 @@ export function GalleryView() {
                   </div>
                 </div>
 
-                <div className="p-5 sm:p-6 flex items-center justify-between">
-                  <div>
-                    <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#A98E63] font-mono block">
-                      {item.categoryLabel}
-                    </span>
-                    <h3 className="font-serif text-lg text-[#111110] group-hover:text-[#A98E63] transition-colors mt-1">
-                      {item.title}
-                    </h3>
-                  </div>
+                <div className="p-5 sm:p-6">
+                  <span className="text-[10px] uppercase tracking-[0.25em] font-semibold text-[#A98E63] font-mono block mb-1">
+                    {item.categoryLabel}
+                  </span>
+                  <h3 className="font-serif text-lg text-[#111110] group-hover:text-[#A98E63] transition-colors leading-snug">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs sm:text-sm text-[#5C554E] font-light leading-relaxed mt-2.5">
+                    {item.description}
+                  </p>
                 </div>
               </button>
             </div>
@@ -213,15 +214,15 @@ export function GalleryView() {
                 priority
               />
             </div>
-            <div className="mt-4 text-center text-white px-4">
+            <div className="mt-4 text-center text-white px-4 max-w-2xl mx-auto">
               <span className="text-[11px] tracking-[0.25em] uppercase text-[#C6AD83] font-mono block">
                 {currentItem.categoryLabel} ({lightboxIndex + 1} von {filteredItems.length})
               </span>
-              <p className="font-serif text-xl sm:text-2xl font-normal mt-1">
+              <p className="font-serif text-xl sm:text-2xl font-normal mt-1 text-[#F3EEE6]">
                 {currentItem.title}
               </p>
-              <p className="text-xs text-[#B8B0A4] mt-1 max-w-xl mx-auto font-light">
-                {currentItem.alt}
+              <p className="text-sm text-[#DFCBB5] mt-2 font-light leading-relaxed">
+                {currentItem.description}
               </p>
             </div>
           </div>

@@ -201,9 +201,24 @@ export function CinematicHero() {
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg sm:text-2xl md:text-3xl text-[#F3EEE6]/85 font-light tracking-wide max-w-2xl mx-auto mb-12 leading-relaxed">
+        <p className="text-lg sm:text-2xl md:text-3xl text-[#F3EEE6]/85 font-light tracking-wide max-w-2xl mx-auto mb-8 leading-relaxed">
           Café, Bar & Catering in Allschwil.
         </p>
+
+        {/* Active Dish Appetizing Highlight */}
+        <div className="max-w-2xl mx-auto mb-10 transition-all duration-700">
+          <div className="inline-block px-5 py-3 rounded-2xl bg-black/65 backdrop-blur-md border border-[#C6AD83]/40 text-left shadow-2xl">
+            <div className="flex items-center gap-2 mb-1.5">
+              <span className="w-2 h-2 rounded-full bg-[#C6AD83] animate-pulse" />
+              <span className="text-[11px] uppercase tracking-[0.2em] text-[#C6AD83] font-semibold font-mono">
+                {slides[currentSlide].sceneTitle}
+              </span>
+            </div>
+            <p className="text-xs sm:text-sm text-[#F3EEE6] font-light leading-relaxed">
+              {slides[currentSlide].appetizingDescription}
+            </p>
+          </div>
+        </div>
 
         {/* Action CTAs */}
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-5">
@@ -247,7 +262,7 @@ export function CinematicHero() {
                       {slide.sceneTitle}
                     </span>
                   </div>
-                  <div className="w-full sm:w-28 md:w-36 h-1 bg-white/15 rounded-full overflow-hidden">
+                  <div className="w-full sm:w-16 md:w-20 lg:w-24 h-1 bg-white/15 rounded-full overflow-hidden">
                     <div
                       className={`h-full bg-[#C6AD83] transition-all ${
                         isCurrent

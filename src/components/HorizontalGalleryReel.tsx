@@ -93,8 +93,8 @@ export function HorizontalGalleryReel() {
                   <h3 className="font-serif text-xl sm:text-2xl text-[#F3EEE6] font-normal leading-snug">
                     {item.title}
                   </h3>
-                  <p className="text-xs text-[#B8B0A4] font-light mt-1 line-clamp-2">
-                    {item.alt}
+                  <p className="text-xs text-[#DFCBB5] font-light mt-1.5 line-clamp-3 leading-relaxed">
+                    {item.description || item.alt}
                   </p>
                 </div>
               </div>
