@@ -3,7 +3,7 @@
 import React, { useState, useEffect, useRef, useCallback, useSyncExternalStore } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Play, Pause, ChevronLeft, ChevronRight, ArrowRight, MapPin, Sparkles } from "lucide-react";
+import { Play, Pause, ChevronLeft, ChevronRight, ArrowRight, MapPin } from "lucide-react";
 import { siteConfig } from "@/data/siteConfig";
 
 function subscribeReducedMotion(callback: () => void) {
@@ -298,11 +298,6 @@ export function CinematicHero() {
         </div>
       </div>
 
-      {/* Representative Media Notice Badge */}
-      <div className="absolute top-24 right-4 sm:right-8 z-20 hidden md:flex items-center space-x-1.5 text-[10px] tracking-widest uppercase text-[#F3EEE6]/50 bg-black/40 px-2.5 py-1 rounded backdrop-blur-sm border border-white/5">
-        <Sparkles className="w-3 h-3 text-[#C6AD83]" />
-        <span>Sinematik Impression</span>
-      </div>
     </section>
   );
 }
