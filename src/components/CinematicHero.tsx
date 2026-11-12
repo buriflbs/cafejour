@@ -120,7 +120,7 @@ export function CinematicHero() {
     <section
       role="region"
       aria-roledescription="carousel"
-      aria-label="Cafe Jour Sinematik Hero Slideshow"
+      aria-label="Cafe Jour Slideshow"
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
       onKeyDown={handleKeyDown}
