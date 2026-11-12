@@ -104,11 +104,20 @@ export const siteConfig: BusinessConfig = {
   ],
   heroSlides: [
     {
+      id: "slide-coffee",
+      image: "/images/hero-slide-1.jpg",
+      alt: "Frisch gebrühter Spezialitätenkaffee fliesst mit warmem Dampf in die Tasse",
+      sceneTitle: "Barista Kaffeekunst",
+      sceneTag: "01 · Kaffeekultur",
+      appetizingDescription:
+        "Frisch geröstete Bohnen, samtig-dichte Crema und aromatischer Duft – meisterhaft von Hand gebrüht für Ihren perfekten ersten Genussmoment des Tages.",
+    },
+    {
       id: "slide-canapes",
       image: "/images/real-canape-box.jpg",
       alt: "Handgemachte Gourmet-Canapés Box mit geräuchertem Lachs, Frischkäsecreme und mariniertem Gemüse",
       sceneTitle: "Gourmet Apéro-Canapés",
-      sceneTag: "01 · Fingerfood & Apéro",
+      sceneTag: "02 · Fingerfood & Apéro",
       appetizingDescription:
         "Knusprig geröstetes Landbrot, belegt mit feinstem Räucherlachs, luftiger Kräuter-Frischkäsecreme und mariniertem Grillgemüse – der perfekte Auftakt für jedes Fest.",
     },
@@ -117,7 +126,7 @@ export const siteConfig: BusinessConfig = {
       image: "/images/real-catering-buffet.jpg",
       alt: "Reichhaltiges mediterranes Catering-Buffet mit gefüllten Weinblättern, Pide, Börek und Salaten",
       sceneTitle: "Festliches Catering-Buffet",
-      sceneTag: "02 · Feine Buffetkultur",
+      sceneTag: "03 · Feine Buffetkultur",
       appetizingDescription:
         "Traditionell von Hand gerollte Weinblätter, ofenfrische Pide, goldbraunes Börek und bunte mediterrane Salate – ein opulentes Fest für Augen und Gaumen.",
     },
@@ -126,7 +135,7 @@ export const siteConfig: BusinessConfig = {
       image: "/images/real-pistazien-cheesecake.jpg",
       alt: "San Sebastián Pistazien-Cheesecake mit karamellisierter Kruste und gerösteten Nüssen",
       sceneTitle: "Pistazien San Sebastián",
-      sceneTag: "03 · Pâtisserie-Kunst",
+      sceneTag: "04 · Pâtisserie-Kunst",
       appetizingDescription:
         "Cremig-zarter baskischer Käsekuchen mit karamellisiertem Rand, veredelt mit gerösteten Pistazien, Mandelsplittern und feinen Blüten – himmlisch saftig und intensiv.",
     },
@@ -135,7 +144,7 @@ export const siteConfig: BusinessConfig = {
       image: "/images/real-frucht-torte.jpg",
       alt: "Frische Beeren- und Fruchttorte mit Weinbergpfirsichen, Himbeeren und Mascarponecreme",
       sceneTitle: "Beeren- & Fruchttorte",
-      sceneTag: "04 · Hausgemacht & Frisch",
+      sceneTag: "05 · Hausgemacht & Frisch",
       appetizingDescription:
         "Fein aufgefächerte Weinbergpfirsiche, sonnengereifte Himbeeren und rubinrote Granatapfelkerne auf samtiger Mascarponecreme – pure Frische in jedem Bissen.",
     },
@@ -144,7 +153,7 @@ export const siteConfig: BusinessConfig = {
       image: "/images/real-brunch-buffet.jpg",
       alt: "Mediterrane Brunch- und Frühstückstafel mit Dips, Oliven, Rührei und frischen Kräutern",
       sceneTitle: "Mediterrane Brunchtafel",
-      sceneTag: "05 · Brunch & Genuss",
+      sceneTag: "06 · Brunch & Genuss",
       appetizingDescription:
         "Aromatische mediterrane Dips, marinierte Oliven, Bauernkäse und sonnengereiftes Gemüse – geniessen Sie Ihren Morgen wie im Urlaub am Mittelmeer.",
     },
@@ -153,7 +162,7 @@ export const siteConfig: BusinessConfig = {
       image: "/images/real-cigkofte-platte.jpg",
       alt: "Traditionelle handgeknetete Çiğ Köfte Platte mit Zitronenspalten und knackigem Römersalat",
       sceneTitle: "Traditionelle Çiğ Köfte",
-      sceneTag: "06 · Würzige Spezialitäten",
+      sceneTag: "07 · Würzige Spezialitäten",
       appetizingDescription:
         "Meisterhaft nach traditionellem Geheimrezept handgeknetet, serviert auf knackig-frischem Römersalat mit Zitronenspalten und edlem Granatapfelsirup.",
     },
@@ -162,7 +171,7 @@ export const siteConfig: BusinessConfig = {
       image: "/images/real-fruechte-platte.jpg",
       alt: "Exotische Früchte-Platte mit Erdbeeren, Weintrauben, Melone und Ananas",
       sceneTitle: "Exotische Früchte-Etagere",
-      sceneTag: "07 · Vitaminreicher Genuss",
+      sceneTag: "08 · Vitaminreicher Genuss",
       appetizingDescription:
         "Ein farbenfrohes Feuerwerk aus süssen Erdbeeren, knackigen Trauben, Melonen und Physalis – kunstvoll arrangiert als krönende Erfrischung Ihres Events.",
     },

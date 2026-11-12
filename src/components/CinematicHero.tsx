@@ -262,7 +262,7 @@ export function CinematicHero() {
                       {slide.sceneTitle}
                     </span>
                   </div>
-                  <div className="w-full sm:w-16 md:w-20 lg:w-24 h-1 bg-white/15 rounded-full overflow-hidden">
+                  <div className="w-full sm:w-12 md:w-16 lg:w-20 h-1 bg-white/15 rounded-full overflow-hidden">
                     <div
                       className={`h-full bg-[#C6AD83] transition-all ${
                         isCurrent
